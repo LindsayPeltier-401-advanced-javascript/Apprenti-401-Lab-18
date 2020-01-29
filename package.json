@@ -1,0 +1,23 @@
+{
+  "name": "Apprenti-401-Lab-18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-18/issues"
+  },
+  "homepage": "https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-18#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
+}
