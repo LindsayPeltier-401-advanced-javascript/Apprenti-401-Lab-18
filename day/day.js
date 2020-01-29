@@ -10,7 +10,6 @@ socket.on('sunrise', (payload) => {
   console.log(payload, ':Get ready for work!');
 });
 
-
 socket.on('sunset', (payload) => {
   console.log(payload, ':Get ready for sleep!');
 });
