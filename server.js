@@ -3,7 +3,7 @@
 const io = require('socket.io')(3000);
 
 io.on('connection', socket => {
-  console.log('You are connected', socket.id);
+  console.log('You are connected on ', socket.id);
 });
 
 const schoolRoom = io.of('/schoolRoom');

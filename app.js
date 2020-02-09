@@ -1,6 +1,6 @@
 'use strict';
 
-const assignments = require('../students/students');
+const assignments = require('./students/students');
 /**
  * setInterval
  */
