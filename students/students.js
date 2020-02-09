@@ -1,11 +1,12 @@
 'use strict';
 
 const io = require('socket.io-client');
-const students = io.connect('http://localhost:3000/schoolRoom');
 
-students.emit('join', 'students');
+const studentChannel = io.connect('http://localhost:3000/schoolRoom');
 
-students.on('graded', payload => {
+studentChannel.emit('join', 'students');
+
+studentChannel.on('graded', payload => {
   console.log(payload, 'Graded');
 });
 
@@ -15,7 +16,7 @@ students.on('graded', payload => {
  */
 const submit = () => {
   let number = (Math.floor(Math.random() * 100));
-  students.emit('submission', `Lab ${number}`);
+  studentChannel.emit('submission', `Lab ${number}`);
 };
 
 module.exports = submit;

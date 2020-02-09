@@ -1,17 +1,26 @@
 'use strict';
 
 const io = require('socket.io-client');
-const instructors = io.connect('http://localhost:3000/schoolRoom');
 
-instructors.emit('join', 'instructors');
+const schoolChannel = io.connect('http://localhost:3000/schoolRoom');
 
-instructors.on('submission', payload => {
+schoolChannel.emit('join', 'instructors');
+
+schoolChannel.on('submission', payload => {
   console.log(payload);
-  let grade = Math.floor(Math.random() * 10);
+  gradeAssignment(payload);
+});
+
+const grade = number => `Grade: ${number}`;
+/**
+ * 
+ * @param {*} payload 
+ */
+const gradeAssignment = payload => {
   const graded = {
     assignment: payload,
-    grade: `Grade: ${grade}`,
+    grade: grade(Math.floor(Math.random() * 10)),
   };
 
-  instructors.emit('graded', graded);
-});
+  schoolChannel.emit('grade', graded);
+};
