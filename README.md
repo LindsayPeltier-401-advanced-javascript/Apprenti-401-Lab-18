@@ -8,7 +8,7 @@
 * [travis]()
 
 #### Documentation
-* [jsdoc]()
+* [jsdoc](.docs/index.html)
 
 ### Setup
 #### `.env` requirements
