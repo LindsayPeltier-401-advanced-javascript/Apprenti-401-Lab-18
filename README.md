@@ -4,8 +4,8 @@
 ### Author: Lindsay Peltier
 
 ### Links and Resources
-* [submission PR]()
-* [travis]()
+* [submission PR](https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-18/pull/1)
+* [travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-18)
 
 #### Documentation
 * [jsdoc](.docs/index.html)
