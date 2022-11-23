@@ -19,7 +19,7 @@
   "homepage": "https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-18#readme",
   "dependencies": {
     "nodemon": "^2.0.2",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.5.0"
   },
   "devDependencies": {}
 }
